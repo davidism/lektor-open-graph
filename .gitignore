@@ -1,0 +1,14 @@
+*.py[co]
+__pycache__/
+dist/
+build/
+*.egg-info/
+env/
+venv/
+.tox/
+.cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.idea/
