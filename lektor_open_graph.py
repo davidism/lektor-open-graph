@@ -47,7 +47,7 @@ class OpenGraph(Plugin):
             if not value:
                 continue
 
-            out.append('<meta property="og:{}" content="{}">'.format(
+            out.append(u'<meta property="og:{}" content="{}">'.format(
                 key, escape(value)))
 
         return Markup('\n'.join(out))
