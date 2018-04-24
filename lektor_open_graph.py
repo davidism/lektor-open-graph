@@ -24,6 +24,7 @@ class OpenGraph(Plugin):
                 'global.site_name', self.env.project.name),
             'url': url_to(record, external=True),
             'title': get_og_title(record, model_config, root),
+            'type': 'website',
         }
         image = get_og_image(record, root)
 
