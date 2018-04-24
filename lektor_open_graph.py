@@ -20,7 +20,7 @@ class OpenGraph(Plugin):
         model_config = IniFile(record.datamodel.filename)
         root = get_ctx().pad.root
         items = {
-            'site-name': plugin_config.get(
+            'site_name': plugin_config.get(
                 'global.site_name', self.env.project.name),
             'url': url_to(record, external=True),
             'title': get_og_title(record, model_config, root),
